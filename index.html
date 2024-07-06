@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>MOS Burgers</title>
 </head>
 <body>
-    <h1>Hi... MOS Burgers</h1>
+    <!--header-->
+    <input type="checkbox" id="cart">
+    <label for="cart" class="label-cart"><span class="fas fa-shopping-cart"></span></label> 
+
+    <h3 class="logo">Food delivary Services</h3>
+
+    <!--slide bar-->
+    <div class="slidebar">
+        <div class="slidebar-menu">
+            <span class="fas fa-search"></span>
+            <a href="#">Search</a>
+        </div>
+        <div class="slidebar-menu">
+            <span class="fas fa-home"></span>
+            <a href="#">Home</a>
+        </div>
+        <div class="slidebar-menu">
+            <span class="fas fa-user"></span>
+            <a href="#">Profile</a>
+        </div>
+        <div class="slidebar-menu">
+            <span class="fas fa-sliders-h"></span>
+            <a href="#">Setting</a>
+        </div>
+    </div>
+
+    <!--main dashboard-->
+    <div class="dashboard">
+        <div class="dashboard-banner">
+            <img src="images/burger-promo.jpeg">
+            <div class="banner-promo">
+                <h1><span>50% OFF</span><br>
+                Tastyy Food <br> On Your Hand </h1>
+            </div>
+        </div>
+        <h3 class="dashboard-title">Recommend Food For You</h3>
+        <div class="dashboard-menu">
+            <a href="#">Favorites</a>
+            <a href="#">Best Seller</a>
+            <a href="#">Near Me</a>
+            <a href="#">Promotion</a>
+            <a href="#">Top Rated</a>
+            <a href="#">All</a>
+        </div>
+    </div>
+
 </body>
 </html>

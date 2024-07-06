@@ -1,0 +1,143 @@
+:root {
+    --mainColour:#f6f8fa;
+    --darkBlack:#2d2f31;
+    --darkGrey:#61666b;
+    --grey:#d5d5d5;
+    --lightGrey:#f2f2f2;
+    --yellow:#fecb40;
+    --red:#df113c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    width: 100;
+    height: auto;
+    color: var(--darkBlack);
+}
+
+p {
+    font-size: 14px;
+}
+
+.label-cart {
+    position: fixed;
+    top: 15;
+    right: 10;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.logo {
+    position: fixed;
+    background-color: var(--darkBlack);
+    color: var(--lightGrey);
+    width: 100%;
+    text-align: center;
+    padding: 15px 420px 15px 60px;
+    top: 0;
+    z-index: 2;
+}
+
+.slidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: var(--mainColour);
+    z-index: 1;
+    padding-top: 70px;
+}
+
+.slidebar-menu {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+    color: var(--darkGrey );
+}
+
+.slidebar-menu > a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: var(--darkGrey);
+}
+
+.slidebar-menu:hover {
+    border-right: 2px solid var(--yellow);
+    color: var(--yellow);
+}
+
+.slidebar-menu:hover > a {
+    color: var(--yellow);
+}
+
+.dashboard {
+    height: 100%;
+    width: 100%;
+    padding-right: 360px;
+    padding-left: 60px;
+}
+
+.dashboard-banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 4rem;
+    padding: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.dashboard-banner > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.banner-promo {
+    position: absolute;
+    color: var(--lightGrey);
+    top: 25%;
+    left: 10%;
+    font-weight: 800;
+}
+
+.banner-promo > h1 > span {
+    color: var(--yellow);
+}
+
+.dashboard-title {
+    padding: 0 1rem;
+}
+
+.dashboard-menu {
+    display: flex;
+    gap: 10px;
+    padding: 0.3rem 1rem;
+    overflow-x: auto;
+}
+
+.dashboard-menu > a {
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    min-width: 120px;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--darkBlack);
+    background-color: var(--lightGrey);
+}
+
+.dashboard-menu > a:hover {
+    background-color: var(--red);
+    color: var(--lightGrey);
+}
