@@ -31,6 +31,8 @@ p {
     top: 15;
     right: 10;
     z-index: 4;
+    margin-left: 96%;
+    margin-top: -45px;
     cursor: pointer;
 }
 
@@ -43,8 +45,7 @@ p {
     padding: 15px 420px 15px 60px;
     top: 0;
     z-index: 2;
-}
-
+} 
 .slidebar {
     position: fixed;
     top: 0;
@@ -265,4 +266,79 @@ p {
 .order-total > p > span {
     float: right;
     font-weight: 600;
+}
+
+.order-promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lightGrey);
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    height: 45px;
+    padding: 0 5px;
+    margin: 5px 0 10px 0;
+}
+
+.input-promo {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.button-promo {
+    float: right;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    height: 80%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkout {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: var(--red);
+    border: none;
+    border-radius: 20px;
+    color: var(--lightGrey);
+    cursor: pointer;
+}
+
+.checkout :hover {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#cart {
+    display: none;
+}
+
+#cart:checked ~ .label-cart {
+    color: var(--lightGrey);
+}
+
+#cart:checked ~ .dashboard {
+   padding-right: 10px;
+}
+
+#cart:checked ~ .dashboard-order {
+    display: none;
+}
+
+#cart:checked ~ .logo {
+    padding-right: 0px;
+}
+
+@media screen and (max-width: 680px) {
+    .dashboard{
+        padding-right: 0;
+    }
+
+    .dashboard-order {
+        width: 100%;
+        left: 0;
+    }
 }
