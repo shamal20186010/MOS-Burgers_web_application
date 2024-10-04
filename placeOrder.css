@@ -1,0 +1,2122 @@
+/* Hide the radio buttons */
+.role-radio {
+    display: none;
+
+}
+
+/* Style the labels to look like buttons */
+.role-label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 3px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: center;
+}
+
+.role-label i {
+    margin-right: 5px;
+}
+
+/* Change the appearance when the radio button is checked */
+.role-radio:checked+.role-label {
+    /* background-color: #007bff; */
+    color: black;
+    /* border-color: #007bff;
+
+    */
+}
+
+.role-label:hover {
+    border: 3px solid #7B7272;
+}
+
+.home {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #FFDAB9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-container h2 {
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.navigate-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB0E0E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navigate-button i {
+    margin-right: 5px;
+}
+
+.navigate-button:hover {
+    background-color: #c40b0b;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .form-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .role-label {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .role-label:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.navigate-button:hover {
+    background-color: #D00C0C;
+}
+
+#Heading_HomePage {
+    text-align: center
+}
+
+#btnPlaceOrder {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 30%;
+    /* adjust as needed */
+    left: 20%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+    border: none;
+    padding: 15px 130px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+}
+
+#btnPlaceOrder:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnPlaceOrder:focus {
+    outline: none;
+}
+
+#btnPlaceOrder:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+#FirstPageBtn {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 89%;
+    /* adjust as needed */
+    left: 21%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+    border: none;
+    padding: 15px 90px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#FirstPageBtn:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#FirstPageBtn:focus {
+    outline: none;
+}
+
+#FirstPageBtn:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+.image-container2 {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container2 img {
+    width: 100%;
+    height: auto;
+
+}
+
+#btnSearch {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+    /* Dark text color for better readabil*/
+    border: none;
+    padding: 15px 160px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btnSearch:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnSearch:focus {
+    outline: none;
+}
+
+#btnSearch:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+#btnView {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+    /* Dark text color for better readabil*/
+    border: none;
+    padding: 15px 170px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btnView:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnView:focus {
+    outline: none;
+}
+
+#btnView:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+
+#HeaderPage2 {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    z-index: 1;
+    color: white;
+}
+
+#btnUpdateOrder {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+    /* Dark text color for better readabil*/
+    border: none;
+    padding: 15px 80px;
+    font-size: 25px;
+    cursor: pointer;
+
+    border-radius: 50px;
+}
+
+#btnUpdateOrder:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnUpdateOrder:focus {
+    outline: none;
+}
+
+#btnAddCashier:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+.image-container3 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+#PlaceOrder {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FB0E0E;
+    color: white;
+    border: none;
+    padding: 15px 150px;
+    font-size: 25px;
+    text-align: left;
+    z-index: 1;
+    border-radius: 50px;
+
+}
+
+#clock {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.order-id-container {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.order-id-container h2 {
+    margin-right: 10px;
+}
+
+.order-id-container input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.Customer-id-container {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Customer-id-container h2 {
+    margin-right: 10px;
+}
+
+.Customer-id-container input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.Number-id-container {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Number-id-container h2 {
+    margin-right: 10px;
+}
+
+.Number-id-container input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.Item-id-container {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Item-id-container h2 {
+    margin-right: 10px;
+}
+
+.Item-id-container input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.Price-id-container {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Price-id-container h2 {
+    margin-right: 10px;
+}
+
+.Price-id-container input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.Discount-id-container {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Discount-id-container h2 {
+    margin-right: 10px;
+}
+
+.Discount-id-container input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.Qty-id-container {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Qty-id-container h2 {
+    margin-right: 10px;
+}
+
+.Qty-id-container input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.Total-id-container {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Total-id-container h2 {
+    margin-right: 10px;
+}
+
+.Total-id-container input {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+#logo {
+    width: 10%;
+
+}
+
+.card-square {
+    width: 150px;
+    height: 150px;
+}
+
+.card-img-top {
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 5px;
+    text-align: center;
+}
+
+.card-title,
+.card-text {
+    font-size: 14px;
+    color: red;
+}
+
+.card-title,
+.card-text-Price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-sm {
+    font-size: 12px;
+
+
+
+}
+
+.Buybutton {
+    background-color: greenyellow;
+    /* Green background */
+    color: white;
+    /* White text */
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+
+}
+
+.Buybutton:hover {
+    background-color: red;
+    /* Darker green on hover */
+}
+
+/* #HeadingPlaceOrder {
+    font-family: Alfa Slab One;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    background-color: #F60C0C;
+    padding: 40px 300px;
+    /* Adjust padding to make the border longer */
+    border-radius: 40px;
+    margin: 0;
+    /* Remove default margin */
+    display: inline-block;/
+} */
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centers the entire container's content */
+    margin: 20px;
+}
+
+.heading-image {
+    height: 100px;
+    /* Adjust the size of the image */
+    width: auto;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+/* #HeadingPlaceOrder {
+    margin: 0;
+} */
+#OrderID {
+    margin-top: 10%;
+    font-weight: 700;
+    margin-left: 30px;
+
+}
+
+#custName1 {
+    font-weight: 700;
+
+}
+
+#Name {
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 3%;
+}
+
+#name {
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+
+    color: white;
+}
+
+#nameUpdate {
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+    color: white;
+}
+
+#TelephoneNumber {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 2%;
+
+}
+
+#TeleNumUpdate {
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+
+    color: white;
+}
+
+#TeleNum {
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+
+    color: white;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#ItemCode {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 2%;
+}
+
+#ItemCodeText {
+    color: white;
+
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+}
+
+#ItemCodeTextUpdate {
+    color: white;
+
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+
+}
+
+#Price {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 2%;
+}
+
+#PriceText {
+    color: white;
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+
+
+}
+
+#PriceTextUpdate {
+    color: white;
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+}
+
+#DiscountTextUpdate {
+    color: white;
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+}
+
+#QTYTextUpdate {
+    color: white;
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+}
+
+#Discount {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 2%;
+}
+
+#DiscountText {
+    color: white;
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+
+
+
+}
+
+#QTY {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 2%;
+}
+
+#QTYText {
+    color: white;
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #7B7272;
+
+
+
+}
+
+#TotalFeildUpdate {
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #D9D9D9;
+    font-weight: bold;
+    color: black;
+}
+
+#Total {
+    color: red;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 40%;
+}
+
+#TotalFeild {
+    padding: 15px 100px;
+    border-radius: 40px;
+    background-color: #D9D9D9;
+    font-weight: bold;
+    color: black;
+}
+
+#btnOrder {
+    margin-left: 110px;
+    padding: 20px 70px;
+    border-radius: 40px;
+    background-color: #42E907;
+    color: white;
+    font-size: larger;
+    font-family: Alfa Slab One;
+}
+
+#btnOrder:hover {
+    background-color: #F60C0C;
+}
+
+#btnUpdate {
+    margin-left: 150px;
+    padding: 20px 50px;
+    border-radius: 40px;
+    background-color: #42E907;
+    color: white;
+    font-size: larger;
+    font-family: Alfa Slab One;
+}
+
+#btnUpdate:hover {
+    background-color: #c40b0b;
+}
+
+#Backbtn {
+    font-family: Alfa Slab One;
+    margin-left: 250px;
+    padding: 20px 45px;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+    font-size: larger;
+}
+
+#Backbtn:hover {
+    background-color: #3EF510;
+}
+
+#SearchFeild {
+    padding: 15px 100px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-weight: bold;
+    color: black;
+    margin-left: 30%;
+
+}
+
+#SearchBtn {
+    font-family: Inknut Antiqua;
+    margin-left: 2%;
+    font-size: large;
+    padding: 15px 50px;
+    border-radius: 10px;
+    background-color: #c0f510;
+
+
+}
+
+#SearchBtn:hover {
+    background-color: #30c40b;
+}
+
+#NameSearch {
+
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 2%;
+
+}
+
+/* #OrderDetailSearch {
+    text-align: center;
+    background-color: #F60C0C;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
+    color: white
+} */
+
+#NameSearchField {
+    border: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+#CustomerDetails {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#CustomerDetails th,
+#CustomerDetails td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#CustomerDetails th {
+    background-color: #8a3f17bd;
+    color: #ffffff;
+    text-align: left;
+}
+
+#CustomerDetails tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#CustomerDetails tr:hover {
+    background-color: #f1f1f1;
+}
+
+#CustomerDetails th,
+#CustomerDetails td {
+    text-align: center;
+}
+
+#BackBtnSerach {
+    font-family: Inknut Antiqua;
+    font-size: large;
+    margin-left:42%;
+    margin-top: 3%;
+    padding: 10px 95px;
+    margin-top: 1%;
+    background-color: #daaca7;
+    border-radius:10px;
+
+}
+
+#BackBtnSerach:hover {
+    background-color: #7facb3;
+}
+
+#priceSample {
+    width: 100px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button.edit-button {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #c4bebe;
+}
+
+button.edit-button:hover {
+    background-color: #dbdb93;
+}
+
+button.buy-button {
+    background-color: #7f7f7f;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button.buy-button:hover {
+    background-color: #c5531e
+}
+
+#BurgerMenu {
+    text-align: center;
+    background-color: #D9D9D9;
+}
+
+button.delete-button {
+    background-color: #c40b0b;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.plus-button {
+    margin-top: 2%;
+    margin-left: 80%;
+    padding: 8px 15px;
+    background-color: #b4bb75;
+    ;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.plus-button:hover {
+    background-color: #e5ff00;
+    transform: translateY(-2px);
+}
+
+.plus-button:active {
+    transform: translateY(0);
+}
+
+#HeadingUpdateOrder {
+    font-family: Alfa Slab One;
+    font-size: x-large;
+    text-align: center;
+
+    background-color: #F60C0C;
+    padding: 40px 300px;
+    /* Adjust padding to make the border longer */
+    border-radius: 40px;
+    margin: 0;
+    /* Remove default margin */
+    display: inline-block;/
+}
+
+#btnAddCashier {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 30%;
+    /* adjust as needed */
+    left: 20%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+    /* Dark text color for better readability on light orange */
+
+    border: none;
+    padding: 15px 130px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btnAddCashier:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnAddCashier:focus {
+    outline: none;
+}
+
+#btnAddCashier:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+#btnBackTo {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 90%;
+    /* adjust as needed */
+    left: 20%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+    /* Dark text color for better readability on light orange */
+
+    border: none;
+    padding: 15px 90px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btnBackTo:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnBackTo:focus {
+    outline: none;
+}
+
+#btnBackTo:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+#btnCashierSearch {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 45%;
+    /* adjust as needed */
+    left: 20%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+
+    border: none;
+    padding: 15px 120px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btnCashierSearch:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnCashierSearch:focus {
+    outline: none;
+}
+
+#btnCashierSearch:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+#btnViewOrders {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 60%;
+    /* adjust as needed */
+    left: 20%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+
+    border: none;
+    padding: 15px 130px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btnViewOrders:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnViewOrders:focus {
+    outline: none;
+}
+
+#btnViewOrders:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+#btnFindReport {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 75%;
+    /* adjust as needed */
+    left: 20%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #FFB347;
+    /* Light orange color */
+    color: #333;
+
+    border: none;
+    padding: 15px 130px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+
+
+}
+
+#btnFindReport:hover {
+    background-color: #FF8C00;
+    /* Darker orange on hover */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+#btnFindReport:focus {
+    outline: none;
+}
+
+#btnFindReport:active {
+    transform: translate(-50%, -50%) scale(0.98);
+    /* Slightly scale down on click */
+}
+
+#ViewOrder {
+    font-family: Alfa Slab One;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    background-color: #F60C0C;
+    padding: 40px 300px;
+    /* Adjust padding to make the border longer */
+    border-radius: 40px;
+    margin: 0;
+    /* Remove default margin */
+    display: inline-block;
+
+}
+
+#CustomerDetailsView {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#CustomerDetailsView th,
+#CustomerDetailsView td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#CustomerDetailsView th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+
+#CustomerDetailsView tr:hover {
+    background-color: #f1f1f1;
+}
+
+#CustomerDetailsView th,
+#CustoustomerDetailsView td {
+    text-align: center;
+}
+
+#GetReportHeading {
+    font-family: Alfa Slab One;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    background-color: #F60C0C;
+    padding: 40px 300px;
+    /* Adjust padding to make the border longer */
+    border-radius: 40px;
+    margin: 0;
+    /* Remove default margin */
+    display: inline-block;
+
+}
+
+#btnMonthlyReport {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 40%;
+    /* adjust as needed */
+    left: 50%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #7B7272;
+    color: white;
+    border: none;
+    padding: 15px 130px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+#btnMonthlyReport:hover {
+    background-color: #D9D9D9;
+}
+
+
+#CustomerDetailsReport {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#CustomerDetailsReport th,
+#CustomerDetailsReport td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#CustomerDetailsReport th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+
+#CustomerDetailsReport tr:hover {
+    background-color: #f1f1f1;
+}
+
+#CustomerDetailsReport th,
+#CustomerDetailsReport td {
+    text-align: center;
+}
+
+#btnBestCustomer {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 55%;
+    /* adjust as needed */
+    left: 50%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #7B7272;
+    color: white;
+    border: none;
+    padding: 15px 130px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btnBestCustomer:hover {
+    background-color: #D9D9D9;
+}
+
+#btnHomeCashier {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 85%;
+    /* adjust as needed */
+    left: 50%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #7B7272;
+    color: white;
+    border: none;
+    padding: 15px 100px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.Menu {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #D9D9D9;
+}
+
+#btnItemsReport {
+    position: absolute;
+    /* or relative, depending on your layout needs */
+    top: 70%;
+    /* adjust as needed */
+    left: 50%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: #7B7272;
+    color: white;
+    border: none;
+    padding: 15px 130px;
+    /* adjust padding as needed */
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btnItemsReport:hover {
+    background-color: #D9D9D9;
+}
+
+#AddCashierBody {
+    background-color: #ffffff;
+    /* Set background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow:
+        0 10px 15px rgba(0, 0, 0, 0.3),
+        0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 140px;
+    /* Add padding inside the box */
+    margin: 20px;
+    /* Margin around the box */
+
+}
+
+#BestCustomerTxt {
+    padding: 5px 30px;
+    font-size: larger;
+    font-weight: 800;
+    border-radius: 40px;
+    background-color: #FFEBEE;
+}
+
+#BestCustBody {
+    background: linear-gradient(45deg, #FFC0CB, #FFB6C1, #FF69B4, #FF1493);
+}
+
+#TelephoneNumberTxt {
+
+    margin-top: 5px;
+    padding: 5px 5px;
+    font-size: large;
+    font-weight: 800;
+    border-radius: 40px;
+    background-color: #FFEBEE;
+}
+
+#AmountTxt {
+    color: #c40b0b;
+    margin-top: 5px;
+    padding: 5px 5px;
+    font-size: large;
+    font-weight: 800;
+    border-radius: 40px;
+    background-color: #FFEBEE;
+}
+
+#NameBestCustomer {
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 30%;
+    color: rgba(255, 105, 180, 0.8);
+}
+
+#TelephoneNumberBest {
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 29%;
+    color: rgba(255, 105, 180, 0.8);
+}
+
+#Amount {
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 29%;
+    color: rgba(255, 105, 180, 0.8);
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.sparkle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 105, 180, 0.8);
+    /* Light pink with transparency */
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+    animation: sparkle 1s infinite;
+}
+
+.sparkle:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.sparkle:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    top: 60%;
+    left: 70%;
+    animation-delay: 0.5s;
+}
+
+.sparkle:nth-child(3) {
+    width: 70px;
+    height: 70px;
+    top: 30%;
+    left: 50%;
+    animation-delay: 1s;
+}
+
+#buttonBestCust {
+    background: linear-gradient(45deg, #ff6b81, #ff8a8a);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+#buttonBestCust:hover {
+    background: linear-gradient(45deg, #ff8a8a, #ff6b81);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#buttonBestCust:active {
+    transform: scale(0.98);
+}
+
+#BestCst {
+    background-color: #ffffff;
+    /* Set background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow:
+        0 10px 15px rgba(0, 0, 0, 0.3),
+        0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 70px;
+    /* Add padding inside the box */
+    margin: 20px;
+    /* Margin around the box */
+}
+
+#SearchCashierTxt {
+    padding: 10px 50px;
+    margin-left: 30%;
+    border-radius: 40px;
+}
+
+#SearchCashierBtn {
+    padding: 10px 20px;
+    font-size: large;
+    border-radius: 40px;
+    background-color: #3EF510;
+}
+
+#SearchCashierBtn:hover {
+    background-color: #c40b0b;
+}
+
+#CashierName {
+    color: #D35400;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+#CashierPasswordSearch {
+    color: #D35400;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 29%;
+}
+
+#CashierNameSearchTxt {
+    padding: 10px 40px;
+    border-radius: 40px;
+    margin-left: 30px;
+}
+
+#CashierPasswordSearchTxt {
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+
+#SerchCashierBody {
+    background-color: #FFCC99;
+}
+
+#SearchCashierInter {
+    background-color: #ffffff;
+    /* Set background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow:
+        0 10px 15px rgba(0, 0, 0, 0.3),
+        0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 90px;
+    /* Add padding inside the box */
+    margin: 20px;
+    /* Margin around the box */
+}
+
+#CashierNameUpdate {
+
+    font-size: x-large;
+    font-weight: bolder;
+    color: #D35400;
+
+}
+
+#UpdateCashier {
+    margin-left: 40%;
+    padding: 10px 30px;
+    margin-top: 50px;
+    border-radius: 40px;
+    background-color: #3EF510;
+    font-size: large;
+}
+
+#DeleteCashier {
+    padding: 10px 30px;
+    font-size: large;
+    border-radius: 40px;
+    background-color: red;
+    margin-left: 50px;
+}
+
+#CashierPassword {
+    font-size: x-large;
+    font-weight: bolder;
+    color: #D35400;
+}
+
+#AddBtn {
+    margin-top: 10px;
+    margin-left: 300px;
+    padding: 10px 50px;
+    border-radius: 40px;
+    font-size: x-large;
+    background-color: #3EF510;
+}
+
+#AddBtn:hover {
+    background-color: #D00C0C;
+}
+
+#CashierNameTxt {
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#CashierPasswordTxt {
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#toastBox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#toastBoxSearch {
+    position: fixed;
+    /* Ensure the position is fixed so it stays in place */
+    top: 70%;
+    /* Position 20% from the top of the viewport */
+    right: 5px;
+    /* Position 30px from the right edge */
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the start (top) of the container */
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#SearchCashierBox {
+    position: fixed;
+    /* Ensure the position is fixed so it stays in place */
+    top: 80%;
+    /* Position 20% from the top of the viewport */
+    right: 5px;
+    /* Position 30px from the right edge */
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the start (top) of the container */
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#toastBoxOrder {
+
+    position: fixed;
+    /* Ensure the position is fixed so it stays in place */
+    top: 80%;
+    /* Position 20% from the top of the viewport */
+    right: 5px;
+    /* Position 30px from the right edge */
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the start (top) of the container */
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.toast {
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    font-weight: 700;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.toast img {
+    margin: 0 20px;
+    width: 30px;
+    /* Adjust size as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    vertical-align: middle;
+    /* Align with text */
+    margin-right: 10px;
+    /* Space between image and text */
+}
+
+.toast::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: green;
+    animation: anim 5s linear forwards;
+}
+
+.toast.Cashier::after {
+    background: red;
+}
+
+.toast.Check::after {
+    background: red;
+}
+
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+}
+
+#SearchFoodBtn {
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: #4b5b43;
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+}
+
+#SearchFoodBtn:hover {
+    background-color: #0bc40b;
+}
+
+#SearchFoodTxt {
+    padding: 10px 100px;
+    margin-left: 30%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+#OrderUIbody {
+    background-image: url(images/burger-promo.jpeg);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+#MonthlyReportBody {
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+/* #PlaceOrderBody {
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+} */
+
+#ViewOrdersBody {
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+}
+
+#OrderId {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 3%;
+}
+
+#OIDText {
+    border: none;
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+    font-size: x-large;
+}
+
+#OIDTextUpdate {
+    border: none;
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+    font-size: x-large;
+}
+
+#UpdateOrderDetails {
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+}
+
+#billBtn {
+    margin-left: 200px;
+    padding: 20px 75px;
+    border-radius: 40px;
+    background-color: #42E907;
+    color: white;
+    font-size: larger;
+    font-family: Alfa Slab One;
+}
+
+#billBtn:hover {
+    background-color: #F60C0C;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    animation: slideIn 1s ease-out;
+    color: rgb(255, 255, 255);
+}
+
+.heading-image {
+    width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #090909;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.back-button {
+    position: fixed;
+    left: 20px;
+    background-color: #ff8521;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+    /* Ensure it's on top of other elements */
+}
+
+#CashierBack {
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: large;
+    background-color: red;
+}
+
+.back-button:hover {
+    background-color: #c5c9ff;
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    background-color: #c5c9ff;
+    transform: scale(0.95);
+}
+
+/* Optional: Add a fade-in animation */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#seacrhbody {
+
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Base styles */
+#SubTot {
+    font-size: x-large;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#SubTotTxt {
+    font-size: x-large;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect */
+div:hover #SubTot {
+    color: #D00C0C;
+    /* Change color on hover */
+    transform: scale(1.05);
+    /* Slightly increase size */
+}
+
+div:hover #SubTotTxt {
+    background-color: #e7f0ff;
+    /* Light blue background on hover */
+    border-color: #007BFF;
+    /* Change border color */
+}
+
+#GetBillBtn {
+    padding: 10px 100px;
+    margin-top: 5%;
+    background-color: #d3c3db;
+    font-size: large;
+    margin-left: 42%;
+    border-radius: 10px;
+}
+
+#GetBillBtn:hover {
+    background-color: #dec4a5;
+}
+
+/* Modal background */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Close button */
+.close-button {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Alert message */
+#alertMessage {
+    font-size: x-large;
+    color: black;
+}
+
+#indexbody {
+    background: linear-gradient(to right, #FFD700, #FF6347);
+}
+
+#AddCashody {
+    background-color: #FFCC99;
+}

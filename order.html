@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="icon" href="img/My Logo.jpg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="placeOrder.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Retrieve and parse customerInfo from localStorage
+            let customerInfo = JSON.parse(localStorage.getItem('customerInfo'));
+
+            if (customerInfo) {
+                document.getElementById("name").value = customerInfo.customerName || '';
+                document.getElementById("TeleNum").value = customerInfo.telephone || '';
+            }
+        });
+    </script>
+
+    <script>
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Function to set the input fields with the URL parameters
+        window.onload = function () {
+            document.getElementById("OIDText").value = OIDCounter;
+            const itemCode = getParameterByName('itemCode');
+            const price = getParameterByName('price');
+            const discount = getParameterByName('discount');
+
+            if (itemCode) {
+                document.getElementById("ItemCodeText").value = itemCode;
+            }
+            if (price) {
+                document.getElementById("PriceText").value = price;
+                FinalPrice = parseFloat(price);
+            }
+            if (discount) {
+                document.getElementById("DiscountText").value = discount;
+                DiscountPrs = parseFloat(discount);
+            }
+        }
+    </script>
+</head>
+
+<body id="PlaceOrderBody" style="background-image: url(images/burger-promo.jpeg); color: white;">
+
+    <div class="conteiner">
+
+        <div class="form-signin text-center"><br><br>
+            <h1 class="h1 mb-3 font-weight-normal">Order Form</h1><br><br>
+            <div class="row">
+                <div class="col-4">
+                    <label for="OrderId" id="OrderId" class="sr-only h4">Order ID</label><br>
+                    <input type="text" id="OIDText" class="form-control" readonly><br>
+                    <label for="Name" id="Name" class="sr-only h4">Customer Name</label><br>
+                    <input type="text" id="name" class="form-control" placeholder="Enter customer name" required><br>
+                    <label for="TeleNum" id="TelephoneNumber" class="sr-only h4">Telephone Number</label><br>
+                    <input type="text" id="TeleNum" class="form-control" placeholder="Enter Telephone Number"
+                        required><br>
+                    <label for="ItemCodeText" id="ItemCode" class="sr-only h4">Item Code</label><br>
+                    <input type="text" id="ItemCodeText" class="form-control"><br>
+                </div>
+                <div class="col-4">
+                    <label for="PriceText" id="Price" class="sr-only h4">Price</label>
+                    <input type="number" id="PriceText" class="form-control"><br>
+                    <label for="DiscountText" id="Discount" class="sr-only h4">Discount</label>
+                    <input type="number" id="DiscountText" class="form-control"><br>
+                    <label for="QTYText" id="QTY" class="sr-only h4">QTY</label><br>
+                    <input type="number" id="QTYText" class="form-control"><br>
+                    <label for="TotalFeild" id="Total" class="sr-only h4">Total</label><br>
+                    <input type="number" id="TotalFeild" class="form-control">
+                </div>
+                <div class="col-4"><br><br><br>
+                    <input class="btn btn-lg btn-warning btn-block" type="submit" value="Add to Cart"
+                        onclick="Calc()"><br><br>
+                    <button id="billBtn" class="btn btn-lg btn-success btn-block" type="submit"
+                        onclick="getBill()">Buy</button><br><br>
+                    <button id="billBtn" class="btn btn-lg btn-info btn-block" type="submit"
+                        onclick="location.href='placeOrder.html'">Back to Place Order</button><br><br>
+                    <button class="btn btn-lg btn-danger btn-block" type="submit" onclick="resetOIDCounter()">Reset
+                        Order
+                        ID Counter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
+
+    <script src="app.js"></script>
+    <script src="Bill.js"></script>
+</body>
+
+</html>

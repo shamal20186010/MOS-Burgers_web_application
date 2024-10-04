@@ -26,7 +26,7 @@ p {
     font-size: 14px;
 }
 
-.label-cart {
+/* .label-cart {
     position: fixed;
     top: 15;
     right: 10;
@@ -34,15 +34,15 @@ p {
     margin-left: 96%;
     margin-top: -50px;
     cursor: pointer;
-}
+} */
 
-.addCust {
+/* .addCust {
     position: fixed;
-    /* background-color: white; */
+    background-color: white;
     margin-top: -50px;
     margin-left: 85%;
     z-index: 2;
-}
+} */
 
 .logo {
     position: fixed;
@@ -92,7 +92,7 @@ p {
 .dashboard {
     height: 100%;
     width: 100%;
-    padding-right: 360px;
+    /* padding-right: 360px; */
     padding-left: 60px;
 }
 
@@ -321,11 +321,11 @@ p {
     font-weight: 600;
 }
 
-#cart {
+/* #cart {
     display: none;
-}
+} */
 
-#cart:checked~.label-cart {
+/* #cart:checked~.label-cart {
     color: var(--lightGrey);
 }
 
@@ -339,7 +339,7 @@ p {
 
 #cart:checked~.logo {
     padding-right: 0px;
-}
+} */
 
 @media screen and (max-width: 680px) {
     .dashboard {

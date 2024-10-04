@@ -4,357 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>MOS Burgers</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styleRegister.css">
+    <title>MOS | Login</title>
 </head>
 
 <body>
-    <!--header-->
-    <input type="checkbox" id="cart">
-    <label for="cart" class="label-cart"><span class="fas fa-shopping-cart"></span></label>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>MOS Burgers</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link active">Home</a></li>
+                    <li><a href="#" class="link ">Blog</a></li>
+                    <li><a href="#" class="link ">Services</a></li>
+                    <li><a href="#" class="link ">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
 
-    <h3 class="logo">MOS Burgers</h3>
-    <a href="register.html" class=" addCust"><h3>Add Customer</h3></a>
+        <div class="form-box">
 
-    <!--slide bar-->
-    <div class="slidebar">
-        <div class="slidebar-menu">
-            <span class="fas fa-search"></span>
-            <a href="#">Search</a>
-        </div>
-        <div class="slidebar-menu">
-            <span class="fas fa-home"></span>
-            <a href="#">Home</a>
-        </div>
-        <div class="slidebar-menu">
-            <span class="fas fa-user"></span>
-            <a href="#">Profile</a>
-        </div>
-        <div class="slidebar-menu">
-            <span class="fas fa-sliders-h"></span>
-            <a href="#">Setting</a>
+
+            <div class="login-container" id="login">
+                <div class="top">
+                    <span>Don't have na account? <a href="#" onclick="register()">Sign Up</a></a></span>
+                    <header>Login</header>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="Username" class="input-field" placeholder="Username or Email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="Password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Sign In" onclick="loginAction(event)">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Forgot password ?</a></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Have na account? <a href="#" onclick="login()">Loging</a></a></span>
+                    <header>Sign Up</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Firstnamne">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Lastnamne">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & conditions</a></label>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!--main dashboard-->
-    <div class="dashboard">
-        <div class="dashboard-banner">
-            <img src="images/burger-promo.jpeg">
-            <div class="banner-promo">
-                <h1><span>50% OFF</span><br>
-                    Tasty Food <br> On Your Hand </h1>
-            </div>
-        </div>
-        <h3 class="dashboard-title">Recommend Food For You</h3>
-        <div class="dashboard-menu">
-            <a href="#">Favorites</a>
-            <a href="#">Best Seller</a>
-            <a href="#">Near Me</a>
-            <a href="#">Promotion</a>
-            <a href="#">Top Rated</a>
-            <a href="#">All</a>
-        </div>
-        <div class="dashboard-content">
-            <div class="dashboard-card">
-                <img class="card-image" src="images/cheese-burger.jpg">
-                <div class="card-detail">
-                    <h4>Cheese Burger<span>RS : 1000.00</span></h4>
-                    <p>Cheese Burger (Large) </p>
-                    <p class="card-time"><span class="fas fa-clock">15-30 mins</span></p>
-                </div>
-            </div>
-            <div class="dashboard-card">
-                <img class="card-image" src="images/chiken-burger.jpeg">
-                <div class="card-detail">
-                    <h4>Chicken Burger<span>RS : 1400.00</span></h4>
-                    <p>Chicken Burger (Large) </p>
-                    <p class="card-time"><span class="fas fa-clock">15-30 mins</span></p>
-                </div>
-            </div>
-            <div class="dashboard-card">
-                <img class="card-image" src="images/Double-Cheese-Burger.jpg">
-                <div class="card-detail">
-                    <h4>Double-Cheese Burger<span>RS : 1250.00</span></h4>
-                    <p>Double-Cheese Burger</p>
-                    <p class="card-time"><span class="fas fa-clock">15-30 mins</span></p>
-                </div>
-            </div>
-            <div class="dashboard-card">
-                <img class="card-image" src="images/Special Horgie Submarine.jpg">
-                <div class="card-detail">
-                    <h4>Special Horgie Submarine<span>RS : 2800.00</span></h4>
-                    <p>Special Horgie Submarine</p>
-                    <p class="card-time"><span class="fas fa-clock">15-30 mins</span></p>
-                </div>
-            </div>
-            <div class="dashboard-card">
-                <img class="card-image" src="images/Creamy Shrimp Pasta.jpeg">
-                <div class="card-detail">
-                    <h4>Creamy Shrimp Pasta<span>RS : 2000.00</span></h4>
-                    <p>Creamy Shrimp Pasta</p>
-                    <p class="card-time"><span class="fas fa-clock">15-30 mins</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--main dashboard-->
-    <div class="dashboard-order">
-        <h3>Order Menu</h3>
-        <div class="order-address">
-            <p>No:111111</p>
-            <h4>Table : 22</h4>
-        </div>
-        <div class="order-time">
-            <span class="fas fa-clock"></span> 30 min
-        </div>
-
-        <div class="order-wrapper">
-            <div class="order-card">
-                <img class="order-image" src="images/cheese-burger.jpg">
-                <div class="order-detail">
-                    <p>Cheese Burger</p>
-                    <i class="fas fa-times"></i> <input type="text" value="1">
-                </div>
-                <h4 class="order-price">Rs:1000.00</h4>
-            </div>
-            <div class="order-card">
-                <img class="order-image" src="images/Creamy Shrimp Pasta.jpeg">
-                <div class="order-detail">
-                    <p>Creamy Shrimp Pasta</p>
-                    <i class="fas fa-times"></i> <input type="text" value="1">
-                </div>
-                <h4 class="order-price">Rs:2000.00</h4>
-            </div>
-            <div class="order-card">
-                <img class="order-image" src="images/Special Horgie Submarine.jpg">
-                <div class="order-detail">
-                    <p>Special Horgie Submarine</p>
-                    <i class="fas fa-times"></i> <input type="text" value="1">
-                </div>
-                <h4 class="order-price">Rs:2800.00</h4>
-            </div>
-        </div>
-
-        <hr class="divider">
-        <div class="order-total">
-            <p>Subtotal <span>Rs:5800.00</span></p>
-            <p>Tax(10%) <span>Rs:580.00</span></p>
-            <p>Delivery <span>Free</span></p>
-
-            <div class="order-promo">
-                <input class="input-promo" type="text" placeholder="Apply Discount">
-                <button class="button-promo">Find Promo</button>
-            </div>
-            <hr class="divider">
-            <p>Total <span>Rs : 63080.00</span></p>
-        </div>
-        <button class="checkout">
-            Checkout
-        </button>
-    </div>
-
-    <main class="table" id="customers_table">
-        <section class="table__header">
-            <h1>MOS Burger Iteams</h1>
-        </section>
-        <center>
-            <h2>Burgers</h2>
-        </center>
-        <section class="table__body">
-            <table>
-                <thead>
-                    <tr>
-                        <th> Item Code <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Item Name <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Price (LKR) <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Discount <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> # </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> B1001 </td>
-                        <td> <img src="images/cheese-burger.jpg" alt="">Classic Burger (Large) </td>
-                        <td> 750.00</td>
-                        <td> - </td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-                    <tr>
-                        <td> B1002 </td>
-                        <td> <img src="images/cheese-burger.jpg" alt="">Classic Burger (Regular) </td>
-                        <td> 1500.00</td>
-                        <td> 15%</td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-                    <tr>
-                        <td> B1003 </td>
-                        <td> <img src="images/chiken-burger.jpeg" alt="">Chicken Burger (Large) </td>
-                        <td> 1400.00 </td>
-                        <td> -</td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-                    <tr>
-                        <td> B1004 </td>
-                        <td> <img src="images/chiken-burger.jpeg" alt="">Chicken Burger (Regular) </td>
-                        <td> 800.00 </td>
-                        <td> 20%</td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-                    <tr>
-                        <td> B1005 </td>
-                        <td> <img src="images/Double-Cheese-Burger.jpg" alt="">Double-Cheese Burger</td>
-                        <td> 1250.00 </td>
-                        <td> 20%</td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </section>
-
-        <center>
-            <h2>Submarines</h2>
-        </center>
-        <section class="table__body">
-            <table>
-                <thead>
-                    <tr>
-                        <th> Item Code <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Item Name <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Price (LKR) <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Discount <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> # </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> B1006 </td>
-                        <td> <img src="images/Special Horgie Submarine.jpg" alt="">Special Horgie Submarine</td>
-                        <td> 2800.00</td>
-                        <td> - </td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </section>
-
-        <center>
-            <h2>Fries</h2>
-        </center>
-        <section class="table__body">
-            <table>
-                <thead>
-                    <tr>
-                        <th> Item Code <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Item Name <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Price (LKR) <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Discount <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> # </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> B1007 </td>
-                        <td> <img src="" alt="">Steak Fries (Large)</td>
-                        <td> 1200.00</td>
-                        <td> - </td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </section>
-
-        <center>
-            <h2>Pasta</h2>
-        </center>
-        <section class="table__body">
-            <table>
-                <thead>
-                    <tr>
-                        <th> Item Code <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Item Name <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Price (LKR) <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Discount <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> # </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> B1008 </td>
-                        <td> <img src="images/Creamy Shrimp Pasta.jpeg" alt="">Creamy Shrimp Pasta </td>
-                        <td> 2000.00</td>
-                        <td> - </td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </section>
-
-        <center>
-            <h2>Chicken</h2>
-        </center>
-        <section class="table__body">
-            <table>
-                <thead>
-                    <tr>
-                        <th> Item Code <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Item Name <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Price (LKR) <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Discount <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> # </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> B1009 </td>
-                        <td> <img src="" alt="">Fried Chicken (Regular) </td>
-                        <td> 2300.00</td>
-                        <td> 10% </td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </section>
-
-        <center>
-            <h2>Beverages</h2>
-        </center>
-        <section class="table__body">
-            <table>
-                <thead>
-                    <tr>
-                        <th> Item Code <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Item Name <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Price (LKR) <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> Discount <span class="icon-arrow">&UpArrow;</span></th>
-                        <th> # </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> B1010 </td>
-                        <td> <img src="" alt="">Sprite (330ml) </td>
-                        <td> 1500.00</td>
-                        <td> 3% </td>
-                        <td> <a href="#">ADD</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </section>
-    </main>
-
-
-
-
+    <script src="app.js"></script>
 </body>
 
 </html>
